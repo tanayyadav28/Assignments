@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{\textbf{AI 1103 : Probability and Randomm Variables}}
+\author{\textsc{assignment 1}}
+\date{\textsc{ai20btech11026}}
+\onehalfspacing
+\begin{document}
+\maketitle
+\textbf{\large{Solution 1.1:} }
+\\\indent Let the random variable $X = \{ 0,1 \}$ denote the outcome of the given experiment.
+\\$X = 1$ if the marble picked turns out $Green$.
+\\$X = 0$ if the marble picked turns out $Blue$.
+\\It is given that,
+$$P(X = 1) = \frac{2}{3}$$
+$$\therefore{} P(X = 0) = 1 - P(X = 1)$$
+$$\therefore{} P(X = 0) = 1 - \frac{2}{3}$$
+$$\therefore{} P(X = 0) = \frac{1}{3}$$
+\\Now,
+$$n(X = 0) + n(X = 1) = 24$$
+$$\because P(X = 0) = \frac{n(X = 0)}{n(X = 0) + n(X = 1)}$$
+$$\therefore{} n(X = 0) = P(X = 0)\left(n(X = 0) + n(X = 1)\right)$$
+$$\therefore{} n(X = 0) = \frac{(1) (24)}{3}$$
+$$\therefore{} n(X = 0) = 8$$
+\\$\therefore{}$ Theoretical number of blue balls is $8$.
+
+\end{document}
