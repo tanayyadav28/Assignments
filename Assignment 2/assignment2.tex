@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\twocolumn
+\allowbreak
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage[anythingbreaks]{breakurl}
+\usepackage[A4, portrait, margin=1.3in]{geometry}
+\title{\textbf{AI 1103 : Probability and Randomm Variables}}
+\author{\textsc{assignment 2}}
+\date{\textsc{ai20btech11026}}
+\onehalfspacing
+\begin{document}
+\maketitle
+\noindent
+\textbf{\large{Problem:}}
+Savita and Hamida are friends.\\ What is the probability that both will have\\ (i) different birthdays?\\ (ii) the same birthday?\\ (ignoring a leap year). \hspace{0.6in}\((Prob,5.21)\)
+\\\\\textbf{\large{Solution:}}
+\\\indent
+Let \(pr(A)\) be the probability that Savita and Hamida have their birthdays on a same day.
+\\\indent Let \(pr(B)\) be the probability that Savita and Hamida have their birthdays on different days.
+\\Savita's Birthday can be on any day of a non-leap year. Hamida's birthday can also be on any of the 365 days of the same year. We consider all of these 365 outcomes to be \textit{equally likely}.
+\\\\
+Considering Savita to have her birthday on a particular day,
+for Hamida's and Savita's birthday to be different, there are \((365 - 1) = 364\) favourable outcomes.
+\begin{align*}
+    \therefore pr(B) &= \frac{364}{365}\\
+    \therefore pr(B) &= 0.99726027 \hspace{1cm}....(i)
+\end{align*}
+\\Now, Savita and Hamida having their birthdays on the same day is the event that Savita and Hamida do not have birthdays on different days.
+\begin{align*}
+    \therefore pr(A) &= 1 - pr(B) \\
+    \therefore pr(A) &= 1 - 0.99726027 \hspace{1cm}...(From(i))\\
+    \therefore pr(A) &= 0.00273972
+\end{align*}
+\indent Hence, the probability that Hamida and Savita have their birthdays on the same day of the year is $0.00273972$ and on different days of the year is $0.99726027$.
+
+\\\\{Link to the code:
+
+\burl{https://github.com/tanayyadav28/Assignments/blob/main/Assignment\%202/code/assignment2.py}}
+
+
+
+
+\end{document}
